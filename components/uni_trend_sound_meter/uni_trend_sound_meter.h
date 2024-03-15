@@ -16,7 +16,7 @@ using namespace ble_client;
 
 espbt::ESPBTUUID uuid128_from_string(std::string value);
 
-class UnitTrendSoundMeter : public sensor::Sensor, public PollingComponent, public BLEClientBase {
+class UnitTrendSoundMeter : public sensor::Sensor, public PollingComponent, public BLEClientBase, public BLEClientNode {
 
 public:
   void dump_config() override;
